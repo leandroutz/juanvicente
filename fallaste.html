@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+            background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+        }
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(228, 223, 223);
+            padding: 10px 30px 10px 30px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 1px;
+        }
+        img{
+            width: 300px;
+            border-radius: 500px;
+            box-shadow: 0px 0px 10px 2px;
+            animation: rotacion 10s infinite linear;
+        }
+        @keyframes rotacion {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        div{
+            padding: 20px;
+        }
+        button{
+            font-weight: bolder;
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            border-style: none;
+            box-shadow: 0px 0px 10px 0px black;
+        }
+        button:hover{
+            transform: scale(1.01);
+        }
+        #si{
+            background-color: rgb(25, 196, 25);
+            color: white;
+        }
+        #no{
+            background-color: rgb(253, 80, 80);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Fallaste</h1>
+        <img src="./img/depositphotos_195861472-stock-illustration-sad-emoticon-face-isolated-white.jpg" alt="">
+    </section>
+</body>
+<script src=""></script>
+</html>
